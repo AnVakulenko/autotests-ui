@@ -21,5 +21,5 @@ with sync_playwright() as playwright:
     test_text = page.get_by_test_id('dashboard-toolbar-title-text')  # тут я понятия не имею как назвать переменную
     expect(test_text).to_be_visible()
     expect(test_text).to_have_text('Dashboard')
-    
+
     page.wait_for_timeout(5000)
