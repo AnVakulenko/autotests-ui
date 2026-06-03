@@ -22,4 +22,3 @@ with sync_playwright() as playwright:
     expect(test_text).to_be_visible()
     expect(test_text).to_have_text('Dashboard')
 
-    page.wait_for_timeout(5000)
